@@ -1,1 +1,0 @@
-document.getElementById('start').onclick=()=>document.getElementById('modal').classList.remove('hidden');
