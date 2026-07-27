@@ -37,7 +37,11 @@ BNM.browse = (function(){
       <div class="spotlight-copy"><div class="eyebrow">${s.label}</div><h2>${s.title}</h2><p class="spotlight-intro">${s.intro}</p><div class="spotlight-why"><span>Why it made the cover</span>${s.why}</div><button class="btn btn-primary" id="spotlightStart">See the full adventure →</button></div>
       <aside class="mission-note"><div class="mission-tape"></div><span>Bonus mission</span><strong>${s.bonus}</strong><p>${s.signoff}</p></aside>`;
     document.getElementById("spotlightStart").onclick=()=>{
-      const section=document.getElementById("adventureSpotlight"); section.innerHTML=""; section.appendChild(BNM.createActivityCard(a,{compact:false}));
+      const section=document.getElementById("adventureSpotlight");
+      section.classList.add("spotlight-expanded");
+      section.innerHTML="";
+      section.appendChild(BNM.createActivityCard(a,{compact:false}));
+      section.scrollIntoView({behavior:"smooth",block:"start"});
     };
   }
 
