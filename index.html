@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="BNMcreative helps you spend less time scrolling and more time living.">
+  <title>BNMcreative — Bored No More</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="orbs"><span class="orb one"></span><span class="orb two"></span><span class="orb three"></span></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <button class="logo btn-reset" id="logoHome" aria-label="Go home">BNM<span>creative</span><span class="version">v1.2</span></button>
+      <div class="nav-actions">
+        <button class="btn btn-ghost btn-small" id="browseNav">⌕ <span class="label">Browse</span></button>
+        <button class="btn btn-primary btn-small" id="startNav">Find an activity</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="page">
+      <div class="hero container">
+        <div class="hero-content">
+          <div class="eyebrow">Bored No More</div>
+          <h1>Are you bored?<br>We have the solution.</h1>
+          <p>Answer a few quick questions and get an activity that actually fits your group, time, budget, energy, and mood.</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" id="startHero">END MY BOREDOM →</button>
+            <button class="btn btn-ghost" id="browseHero">Browse all ideas</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="questionnaire" class="hidden">
+      <div class="question-wrap">
+        <div class="panel question-panel">
+          <div class="question-head"><span id="questionNumber"></span><span id="questionLabel"></span></div>
+          <div class="progress-shell"><div class="progress-fill" id="progressFill"></div></div>
+          <h2 id="questionTitle"></h2>
+          <div class="options" id="options"></div>
+          <div class="question-actions">
+            <button class="btn btn-ghost" id="backQuestion">← Back</button>
+            <button class="btn btn-primary" id="nextQuestion">Next →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="loading" class="loading hidden">
+      <div>
+        <div class="ring"></div>
+        <div class="eyebrow">Building your match</div>
+        <h2>Finding your perfect activity...</h2>
+        <p class="loading-message" id="loadingMessage">Reading your answers...</p>
+        <div class="checks">
+          <div class="check">Group size understood</div>
+          <div class="check">Time and budget compared</div>
+          <div class="check">Energy and mood matched</div>
+          <div class="check">Best activities ranked</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="results" class="hidden">
+      <div class="results-wrap">
+        <div class="results-head">
+          <div class="eyebrow">Your best match</div>
+          <h1>Let's cure that boredom.</h1>
+          <p>Only the important information is shown first. Open details when you're ready.</p>
+        </div>
+        <div id="resultCard"></div>
+      </div>
+    </section>
+
+    <section id="browse" class="hidden">
+      <div class="browse-wrap">
+        <div class="browse-head">
+          <div>
+            <div class="eyebrow">Activity library</div>
+            <h1>Browse ideas.</h1>
+            <p>Search and filter without answering the questionnaire.</p>
+          </div>
+          <button class="btn btn-primary" id="browseStart">Get a personal match</button>
+        </div>
+
+        <div class="filter-row">
+          <input class="search wide" id="searchInput" type="search" placeholder="Search activities...">
+          <select class="search" id="settingFilter" aria-label="Setting">
+            <option value="all">Any setting</option><option value="indoor">Indoor</option><option value="outdoor">Outdoor</option>
+          </select>
+          <select class="search" id="costFilter" aria-label="Cost">
+            <option value="all">Any cost</option><option value="free">Free</option><option value="low">Low cost</option><option value="medium">Medium cost</option>
+          </select>
+          <select class="search" id="energyFilter" aria-label="Energy">
+            <option value="all">Any energy</option><option value="low">Low energy</option><option value="medium">Medium energy</option><option value="high">High energy</option>
+          </select>
+          <select class="search" id="timeFilter" aria-label="Time">
+            <option value="all">Any time</option><option value="45">45 min or less</option><option value="75">75 min or less</option><option value="120">2 hours or less</option>
+          </select>
+        </div>
+        <div class="result-count" id="resultCount"></div>
+        <div class="activity-grid" id="activityGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="data/activities.js"></script>
+  <script src="js/matching.js"></script>
+  <script src="js/cards.js"></script>
+  <script src="js/questionnaire.js"></script>
+  <script src="js/browse.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
