@@ -1,5 +1,5 @@
 window.BNM = window.BNM || {};
-BNM.sections=["home","questionnaire","loading","results","browse","favorites","departure","complete"];
+BNM.sections=["home","questionnaire","loading","results","browse","favorites","departure","complete","gaming","quickSetup"];
 
 BNM.show=function(id){
   BNM.sections.forEach(section=>{
@@ -59,6 +59,10 @@ document.addEventListener("DOMContentLoaded",()=>{
   document.getElementById("browseStart").addEventListener("click",BNM.questionnaire.start);
   document.getElementById("browseHero").addEventListener("click",BNM.browse.open);
   document.getElementById("browseNav").addEventListener("click",BNM.browse.open);
+  document.getElementById("gamingHero").addEventListener("click",BNM.gaming.open);
+  document.getElementById("gamingRandom").addEventListener("click",BNM.gaming.random);
+  document.getElementById("gamingBack").addEventListener("click",()=>BNM.show("home"));
+  document.getElementById("quickSetupBack").addEventListener("click",()=>BNM.show("browse"));
   document.getElementById("favoritesNav").addEventListener("click",BNM.favorites.open);
   document.getElementById("surpriseHero").addEventListener("click",BNM.adventure.surprise);
   document.getElementById("surpriseBrowse").addEventListener("click",BNM.adventure.surprise);

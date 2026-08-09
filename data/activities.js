@@ -2783,5 +2783,8 @@ window.BNM_ACTIVITIES = [
       "Take turns playing."
     ],
     "tip": "Mix funny tasks with conversation questions."
-  }
+  },
+  {id:"trivia",name:"BNM Trivia Night",emoji:"🧠",category:"indoor",place:["inside"],locations:["home"],players:[2,3,4,5,6],minutes:35,cost:"free",energy:"low",tags:["social","competitive"],summary:"BNM supplies the questions and scoring.",steps:["Open setup.","Pick teams.","Play."],why:"No hunting for questions.",bonus:"Winner chooses the next category."},
+  {id:"drawing",name:"Drawing Battle",emoji:"✏️",category:"creative",place:["inside"],locations:["home"],players:[2,3,4,5,6],minutes:30,cost:"free",energy:"low",tags:["creative","competitive"],summary:"Fast drawing rounds with BNM prompts.",steps:["Grab paper.","Open setup.","Vote."],why:"Funny even if nobody can draw.",bonus:"Non-dominant-hand final."},
+  {id:"charades",name:"BNM Charades",emoji:"🎭",category:"indoor",place:["inside"],locations:["home"],players:[3,4,5,6,7,8],minutes:30,cost:"free",energy:"medium",tags:["party","social"],summary:"BNM gives you the charades deck.",steps:["Open setup.","Set timer.","Play."],why:"Zero prep.",bonus:"Final prompt is double."}
 ];

@@ -29,7 +29,7 @@ BNM.createActivityCard = function(activity, options={}){
       <span class="chip">💰 ${BNM.costLabel(activity.cost)}</span>
       <span class="chip">⚡ ${BNM.energyLabel(activity.energy)}</span>
     </div>
-    <div class="card-actions">
+    <div class="card-actions">${zeroSetup?`<button class="btn btn-primary zero-setup-btn">Set up my game →</button>`:""}
       ${options.resultCard ? `<button class="btn btn-primary start-adventure-btn">Let's do it →</button><button class="btn btn-ghost another-btn">Show me another</button>` : ""}
       <button class="btn btn-ghost details-btn" aria-expanded="false">View details</button>
     </div>
@@ -71,6 +71,7 @@ BNM.createActivityCard = function(activity, options={}){
     if(BNM.favorites && BNM.favorites.refresh) BNM.favorites.refresh();
   });
 
+  const zeroButton=wrapper.querySelector(".zero-setup-btn"); if(zeroButton) zeroButton.addEventListener("click",()=>BNM.zeroSetup.open(activity.id));
   const startButton=wrapper.querySelector(".start-adventure-btn");
   if(startButton) startButton.addEventListener("click",()=>BNM.adventure.start(activity));
 
