@@ -1,27 +1,32 @@
 window.BNM = window.BNM || {};
 
 BNM.questionnaire = (function(){
-  const questions = [
-    {key:"people",label:"Group size",title:"How many people are joining?",options:[["1","Just me"],["2","2 people"],["4","3–5 people"],["7","6+ people"]]},
-    {key:"time",label:"Time available",title:"How much time do you have?",options:[["45","45 minutes or less"],["75","Around an hour"],["120","Around two hours"],["180","A few hours"]]},
-    {key:"setting",label:"Setting",title:"Where do you want to be?",options:[["indoor","Indoors"],["outdoor","Outdoors"],["either","Either works"]]},
-    {key:"cost",label:"Budget",title:"How much do you want to spend?",options:[["free","Nothing"],["low","A little"],["medium","A moderate amount"]]},
-    {key:"energy",label:"Energy",title:"How much energy do you have?",options:[["low","Keep it chill"],["medium","Something balanced"],["high","Let's move"]]},
-    {key:"mood",label:"Mood",title:"What kind of activity sounds best?",options:[["social","Social"],["creative","Creative"],["competitive","Competitive"],["relaxing","Relaxing"],["adventure","Adventurous"],["food","Food-related"],["productive","Productive"],["active","Active"]]}
+  const baseQuestions = [
+    {key:"people",label:"Who's coming?",title:"How many people are joining?",options:[["1","Just me"],["2","Me + one"],["4","A small crew"],["7","The whole group"]]},
+    {key:"time",label:"Your window",title:"How much time are we working with?",options:[["45","Keep it under 45 minutes"],["75","Around an hour"],["120","Give me a couple hours"],["180","We've got time"]]},
+    {key:"setting",label:"The scene",title:"Where sounds better right now?",options:[["indoor","Stay inside"],["outdoor","Get me outside"],["either","Surprise me"]]},
+    {key:"cost",label:"The budget",title:"How much are you trying to spend?",options:[["free","Absolutely nothing"],["low","A little is fine"],["medium","Worth spending for"]]},
+    {key:"energy",label:"The energy check",title:"Be honest — what's the energy level?",options:[["low","Keep it chill"],["medium","Something balanced"],["high","Let's actually move"]]},
+    {key:"mood",label:"The vibe",title:"What kind of fun are you after?",options:[["social","Something social"],["creative","Make something"],["competitive","Bring on a challenge"],["relaxing","Slow it down"],["adventure","Something different"],["food","Food is involved"],["productive","Useful but fun"],["active","Get moving"]]}
   ];
-  let index=0;
-  const answers={};
+  let questions=[], index=0, answers={};
+
+  function buildPath(){
+    questions=[...baseQuestions];
+    if(answers.people==="1") questions[5]={...questions[5],title:"What sounds good for a solo reset?",options:questions[5].options.filter(x=>!["social","competitive"].includes(x[0]))};
+    if(answers.setting==="outdoor") questions[5]={...questions[5],title:"What kind of outdoor mood are you chasing?"};
+    if(answers.setting==="indoor") questions[5]={...questions[5],title:"What kind of indoor night sounds right?"};
+  }
 
   function render(){
+    buildPath();
     const q=questions[index];
-    document.getElementById("questionNumber").textContent=`Question ${index+1} of ${questions.length}`;
+    const percent=Math.round((index/questions.length)*100);
+    document.getElementById("questionPercent").textContent=`${percent}% Complete`;
     document.getElementById("questionLabel").textContent=q.label;
-    document.getElementById("progressFill").style.width=`${((index+1)/questions.length)*100}%`;
+    document.getElementById("progressFill").style.width=`${percent}%`;
     document.getElementById("questionTitle").textContent=q.title;
     document.getElementById("backQuestion").disabled=index===0;
-    document.getElementById("nextQuestion").textContent=index===questions.length-1?"Find my match →":"Next →";
-    document.getElementById("nextQuestion").disabled=!answers[q.key];
-
     const holder=document.getElementById("options");
     holder.innerHTML="";
     q.options.forEach(([value,label])=>{
@@ -30,40 +35,29 @@ BNM.questionnaire = (function(){
       button.textContent=label;
       button.addEventListener("click",()=>{
         answers[q.key]=value;
-        render();
+        BNM.track("question_answered",{question:q.key,answer:value});
+        button.classList.add("selected");
         setTimeout(()=>{
           if(index<questions.length-1){index++;render();}
           else finish();
-        },190);
+        },220);
       });
       holder.appendChild(button);
     });
   }
 
-  function start(){
-    index=0;
-    BNM.show("questionnaire");
-    render();
-  }
-
-  function next(){
-    if(!answers[questions[index].key])return;
-    if(index<questions.length-1){index++;render();}
-    else finish();
-  }
-
-  function back(){
-    if(index>0){index--;render();}
-  }
-
+  function start(){ index=0; answers={}; buildPath(); BNM.track("questionnaire_started"); BNM.show("questionnaire"); render(); }
+  function back(){ if(index>0){index--;render();} }
   function finish(){
+    document.getElementById("progressFill").style.width="100%";
+    document.getElementById("questionPercent").textContent="100% Complete";
     BNM.show("loading");
-    const messages=["Reading your answers...","Comparing activity styles...","Checking time and budget...","Ranking the best matches...","Your adventure is ready."];
+    const messages=[...BNM.copy.loading,"Alright — we've got it."];
     document.querySelectorAll(".check").forEach(x=>x.classList.remove("done"));
-    messages.forEach((m,i)=>setTimeout(()=>document.getElementById("loadingMessage").textContent=m,i*360));
+    messages.slice(0,5).forEach((m,i)=>setTimeout(()=>document.getElementById("loadingMessage").textContent=m,i*360));
     document.querySelectorAll(".check").forEach((x,i)=>setTimeout(()=>x.classList.add("done"),300+i*270));
+    BNM.track("questionnaire_completed");
     setTimeout(()=>BNM.results.show(BNM.rankActivities(answers)),1900);
   }
-
-  return {start,next,back,getAnswers:()=>({...answers})};
+  return {start,back,getAnswers:()=>({...answers})};
 })();
