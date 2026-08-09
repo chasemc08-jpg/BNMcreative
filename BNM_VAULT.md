@@ -36,3 +36,23 @@ Add any new idea here first. We can decide its version later.
 ## Branding
 - [x] Official BNM icon: purple-to-blue gradient rounded square with white sparkle.
 - [x] Use the icon for the browser favicon and website header.
+
+
+## ✅ Added in v1.3
+- Favorites (saved locally on the user's device)
+- Surprise Me
+- Adventure Complete + quick star rating
+- Microsoft Clarity analytics/event tracking
+
+## 💡 Still in the Vault
+- Adventure Mode with mission envelopes
+- Dynamic bonus missions
+- Hidden missions
+- Adventure postcards
+- Adventure Journal
+- Accounts / synced profiles
+- Achievements and streaks
+- Real community trending
+- Maps and nearby ideas
+- Weather-aware recommendations
+- AI recommendations

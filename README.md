@@ -1,19 +1,18 @@
-# BNMcreative v1.2 — The Polish Update
+# BNMcreative v1.3 — Personalization + Analytics
 
-BNMcreative helps people spend less time scrolling and more time living.
+## New in this version
+- ❤️ Favorites saved in the browser
+- 🎲 Surprise Me for an instant random adventure
+- 🎉 Adventure Complete flow with a quick 1–5 star rating
+- 📊 Microsoft Clarity installed with project ID `xzwenpchvf`
+- 📈 Custom Clarity events for questionnaire starts/completions, featured opens, spotlight opens, favorites, surprise picks, adventure starts/completions, ratings, and more
+- Existing v1.2.3 logo/favicon retained
 
-## What's new
-- Magazine-style weekly picks
-- Adventure Spotlight with a rotating bonus mission concept
-- Redesigned Browse page with custom filter pills
-- Auto-advance questionnaire and percentage-based progress
-- Light branching based on previous answers
-- Rotating, human-sounding interface copy
-- Smoother card, hover, and entrance animations
-- `BNM_VAULT.md` for future ideas
+## Upload
+Upload the *contents* of this folder to the `development` branch, preserving `assets`, `css`, `data`, and `js`.
 
-## Run locally
-Open `index.html` in a browser. No build step or server is required.
+## Important analytics note
+Microsoft's Clarity documentation says Clarity should not be used on websites/apps targeting users under 18 globally. If BNM will target under-18 users, disable/remove the Clarity snippet before publishing broadly.
 
-## Publish
-Upload all files and folders to the root of the GitHub Pages branch.
+## Local storage
+Favorites and ratings currently stay on the visitor's device/browser. They are not synced to an account yet.
