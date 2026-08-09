@@ -1,10 +1,4 @@
-window.BNM = window.BNM || {  complete:[
-    "That's one less boring day.",
-    "You actually went and did it. Respect.",
-    "See? Leaving the scroll was worth it.",
-    "Memory made. Mission accomplished."
-  ]
-};
+window.BNM = window.BNM || {};
 BNM.copy = {
   pick(list){ return list[Math.floor(Math.random()*list.length)]; },
   loading:[

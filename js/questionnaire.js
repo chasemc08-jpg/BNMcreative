@@ -35,7 +35,6 @@ BNM.questionnaire = (function(){
       button.textContent=label;
       button.addEventListener("click",()=>{
         answers[q.key]=value;
-        BNM.track("question_answered",{question:q.key,answer:value});
         button.classList.add("selected");
         setTimeout(()=>{
           if(index<questions.length-1){index++;render();}
@@ -46,7 +45,7 @@ BNM.questionnaire = (function(){
     });
   }
 
-  function start(){ index=0; answers={}; buildPath(); BNM.track("questionnaire_started"); BNM.show("questionnaire"); render(); }
+  function start(){ index=0; answers={}; buildPath(); BNM.show("questionnaire"); render(); }
   function back(){ if(index>0){index--;render();} }
   function finish(){
     document.getElementById("progressFill").style.width="100%";
@@ -56,7 +55,6 @@ BNM.questionnaire = (function(){
     document.querySelectorAll(".check").forEach(x=>x.classList.remove("done"));
     messages.slice(0,5).forEach((m,i)=>setTimeout(()=>document.getElementById("loadingMessage").textContent=m,i*360));
     document.querySelectorAll(".check").forEach((x,i)=>setTimeout(()=>x.classList.add("done"),300+i*270));
-    BNM.track("questionnaire_completed");
     setTimeout(()=>BNM.results.show(BNM.rankActivities(answers)),1900);
   }
   return {start,back,getAnswers:()=>({...answers})};

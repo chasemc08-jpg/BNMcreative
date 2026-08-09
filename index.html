@@ -5,22 +5,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="BNMcreative helps you spend less time scrolling and more time living.">
   <title>BNMcreative — Bored No More</title>
-  <link rel="icon" href="assets/favicon.ico?v=1.3" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=1.3">
-  <link rel="apple-touch-icon" href="assets/favicon-192.png?v=1.3">
-  <link rel="stylesheet" href="css/variables.css?v=1.3">
-  <link rel="stylesheet" href="css/base.css?v=1.3">
-  <link rel="stylesheet" href="css/components.css?v=1.3">
-  <link rel="stylesheet" href="css/pages.css?v=1.3">
-
-  <!-- Microsoft Clarity analytics -->
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "xzwenpchvf");
-  </script>
+  <link rel="icon" href="assets/favicon.ico?v=1.2.3" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=1.2.3">
+  <link rel="apple-touch-icon" href="assets/favicon-192.png?v=1.2.3">
+  <link rel="stylesheet" href="css/variables.css?v=1.2.3">
+  <link rel="stylesheet" href="css/base.css?v=1.2.3">
+  <link rel="stylesheet" href="css/components.css?v=1.2.3">
+  <link rel="stylesheet" href="css/pages.css?v=1.2.3">
 </head>
 <body>
   <div class="noise"></div>
@@ -28,9 +19,8 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <button class="logo btn-reset" id="logoHome" aria-label="Go home"><img class="logo-icon" src="assets/favicon-192.png?v=1.3" alt="">BNM<span>creative</span><span class="version">v1.3</span></button>
+      <button class="logo btn-reset" id="logoHome" aria-label="Go home"><img class="logo-icon" src="assets/favicon-192.png?v=1.2.3" alt="">BNM<span>creative</span><span class="version">v1.2.3</span></button>
       <div class="nav-actions">
-        <button class="btn btn-ghost btn-small" id="favoritesNav">♡ <span class="label">Favorites</span></button>
         <button class="btn btn-ghost btn-small" id="browseNav">⌕ <span class="label">Browse</span></button>
         <button class="btn btn-primary btn-small" id="startNav">Find an activity</button>
       </div>
@@ -46,7 +36,6 @@
           <p>Answer a few quick questions and get an activity that actually fits your group, time, budget, energy, and mood.</p>
           <div class="hero-actions">
             <button class="btn btn-primary" id="startHero">END MY BOREDOM →</button>
-            <button class="btn btn-ghost surprise-btn" id="surpriseHero">🎲 Surprise me</button>
             <button class="btn btn-ghost" id="browseHero">Browse all ideas</button>
           </div>
         </div>
@@ -93,55 +82,6 @@
       </div>
     </section>
 
-    <section id="departure" class="hidden">
-      <div class="departure-wrap">
-        <div class="departure-mark">✦</div>
-        <div class="eyebrow" id="departureEyebrow">Mission accepted</div>
-        <h1 id="departureTitle">Go make a memory.</h1>
-        <p id="departureCopy">We'll be here when you get back.</p>
-        <div class="departure-activity" id="departureActivity"></div>
-        <div class="hero-actions">
-          <button class="btn btn-primary" id="cameBackButton">I'm back — we did it</button>
-          <button class="btn btn-ghost" id="departureHome">I'll come back later</button>
-        </div>
-      </div>
-    </section>
-
-    <section id="complete" class="hidden">
-      <div class="complete-wrap">
-        <div class="complete-card panel">
-          <div class="complete-spark">✦</div>
-          <div class="eyebrow">Adventure complete</div>
-          <h1 id="completeTitle">How was it?</h1>
-          <p id="completeCopy">Give it a quick rating. That's all we need.</p>
-          <div class="rating-stars" id="ratingStars" aria-label="Rate this adventure from 1 to 5 stars">
-            <button type="button" data-rating="1" aria-label="1 star">★</button>
-            <button type="button" data-rating="2" aria-label="2 stars">★</button>
-            <button type="button" data-rating="3" aria-label="3 stars">★</button>
-            <button type="button" data-rating="4" aria-label="4 stars">★</button>
-            <button type="button" data-rating="5" aria-label="5 stars">★</button>
-          </div>
-          <p class="rating-response" id="ratingResponse"></p>
-          <button class="btn btn-primary hidden" id="finishComplete">Back to BNM</button>
-        </div>
-      </div>
-    </section>
-
-    <section id="favorites" class="hidden">
-      <div class="browse-wrap">
-        <div class="browse-head">
-          <div>
-            <div class="eyebrow">Saved for later</div>
-            <h1>Your favorites.</h1>
-            <p>The adventures that made you stop and think, “yeah, I'd do that.”</p>
-          </div>
-          <button class="btn btn-primary" id="favoritesMatch">Find something new</button>
-        </div>
-        <div class="result-count" id="favoriteCount"></div>
-        <div class="activity-grid" id="favoriteGrid"></div>
-      </div>
-    </section>
-
     <section id="browse" class="hidden">
       <div class="browse-wrap">
         <div class="browse-head">
@@ -150,10 +90,7 @@
             <h1>Browse ideas.</h1>
             <p>Search and filter without answering the questionnaire.</p>
           </div>
-          <div class="browse-head-actions">
-            <button class="btn btn-ghost" id="surpriseBrowse">🎲 Surprise me</button>
-            <button class="btn btn-primary" id="browseStart">Get a personal match</button>
-          </div>
+          <button class="btn btn-primary" id="browseStart">Get a personal match</button>
         </div>
 
         <section class="weekly-section" aria-labelledby="weeklyTitle">
@@ -179,15 +116,13 @@
     </section>
   </main>
 
-  <script src="data/activities.js?v=1.3"></script>
-  <script src="data/featured.js?v=1.3"></script>
-  <script src="js/personality.js?v=1.3"></script>
-  <script src="js/matching.js?v=1.3"></script>
-  <script src="js/cards.js?v=1.3"></script>
-  <script src="js/questionnaire.js?v=1.3"></script>
-  <script src="js/browse.js?v=1.3"></script>
-  <script src="js/storage.js?v=1.3"></script>
-  <script src="js/adventure.js?v=1.3"></script>
-  <script src="js/app.js?v=1.3"></script>
+  <script src="data/activities.js?v=1.2.3"></script>
+  <script src="data/featured.js?v=1.2.3"></script>
+  <script src="js/personality.js?v=1.2.3"></script>
+  <script src="js/matching.js?v=1.2.3"></script>
+  <script src="js/cards.js?v=1.2.3"></script>
+  <script src="js/questionnaire.js?v=1.2.3"></script>
+  <script src="js/browse.js?v=1.2.3"></script>
+  <script src="js/app.js?v=1.2.3"></script>
 </body>
 </html>
