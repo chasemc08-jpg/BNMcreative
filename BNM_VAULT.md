@@ -31,3 +31,8 @@ A simple place to save good ideas without forcing them into the current update.
 
 ## Brain Dump
 Add any new idea here first. We can decide its version later.
+
+
+## Branding
+- [x] Official BNM icon: purple-to-blue gradient rounded square with white sparkle.
+- [x] Use the icon for the browser favicon and website header.

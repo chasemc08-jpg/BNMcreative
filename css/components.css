@@ -2,7 +2,7 @@
 .site-header{position:sticky;top:0;z-index:20;background:#090910cc;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
 .header-inner{height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px}
 .logo{display:flex;align-items:center;gap:9px;font-weight:900;letter-spacing:-.04em}
-.logo:before{content:"✦";display:grid;place-items:center;width:31px;height:31px;border-radius:10px;background:linear-gradient(135deg,var(--purple),var(--blue));box-shadow:0 0 28px #725cff66}
+.logo-icon{width:31px;height:31px;border-radius:10px;object-fit:cover;box-shadow:0 0 28px #725cff66}
 .logo span{color:#bdb9d8;font-weight:500}
 .version{font-size:.68rem;color:#a7a9bc;border:1px solid var(--line);padding:5px 8px;border-radius:99px}
 .nav-actions{display:flex;gap:8px}
