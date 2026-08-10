@@ -1,5 +1,3 @@
-# BNMcreative v1.3.1 — Games + Zero-Setup
+# BNMcreative v1.3.3 — Spotlight Experience
 
-Adds Gaming Mode, 30 game-specific challenges, reusable Zero-Setup activities, and new general games. Next planned update: layout/navigation redesign.
-
-Clarity stays for development testing only; switch to Simple Analytics before public launch.
+The Adventure Spotlight is now a bespoke animated magazine-style adventure. CITY FRAME replaces the basic expanded Photo Scavenger Hunt with five custom missions, explanations, a Purple Van rare encounter, and a cover-shot finale.

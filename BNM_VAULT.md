@@ -71,3 +71,22 @@ Add any new idea here first. We can decide its version later.
 - More supported games based on usage
 - Major layout/navigation redesign after this update
 - Public launch: replace Clarity with Simple Analytics
+
+
+## ✅ v1.3.2 — Challenge Polish
+- Fixed Gaming back-button placement and styling
+- Gaming challenges now have expandable **More details**
+- Details explain exact rules, why the challenge is fun, and a quick tip
+- Zero-Setup challenges now include **Explain it** help
+- Creative prompts intentionally moved toward stranger, less predictable ideas
+- Drawing Battle, Charades, Photo Hunt, Minute to Win It, and Backyard Olympics got more unusual prompts
+
+
+## ✅ v1.3.3 — Spotlight Experience
+- "See the full adventure" now opens a custom animated magazine-style feature instead of a normal activity card
+- First cover mission: **CITY FRAME**
+- Five custom photo missions with expandable "What counts?" explanations
+- Rare Encounter: **The Purple Van**
+- Custom finale: group votes on the official cover shot
+- Spotlight gets its own intro, metadata, mission styling, rare challenge, signoff, and Accept Adventure flow
+- Direction going forward: every Spotlight should be a special edition of an activity, not the normal library version
