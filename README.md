@@ -1,3 +1,3 @@
-# BNMcreative v1.3.6 — Navigation + Gaming Browse
+# BNMcreative v1.3.7 — Feedback + Gaming Repair
 
-Fixes CITY FRAME return styling, Feedback shine clipping, adds Surprise Me back navigation, and adds Browse All challenges per game.
+Centers and clips the feedback CTA shine, and repairs Gaming selection, Decide For Us, and Browse All.

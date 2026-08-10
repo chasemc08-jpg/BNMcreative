@@ -112,3 +112,8 @@ Add any new idea here first. We can decide its version later.
 - Feedback shine is clipped to the Feedback pill.
 - Surprise Me now has a Back button.
 - Gaming gets Browse All for the selected game, with full challenge cards and details.
+
+## v1.3.7 — Feedback + Gaming repair
+- Centered the feedback CTA and constrained its shine entirely inside the button.
+- Rebuilt Gaming markup so Decide For Us, game selection, and Browse All all use real existing elements.
+- Gaming JS no longer relies on browser-generated global variables from element IDs.

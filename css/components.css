@@ -155,3 +155,27 @@ select.search option{background:#171725}
 .compact-game-card{margin:0!important;max-width:none!important}
 .compact-game-card h2{font-size:clamp(1.5rem,3vw,2.2rem)!important}
 @media(max-width:800px){.gaming-all-grid{grid-template-columns:1fr}.gaming-toolbar{justify-content:stretch}.gaming-toolbar .btn{width:100%}}
+
+/* v1.3.7 feedback CTA cleanup */
+.feedback-go{
+  display:flex!important;
+  width:min(320px,100%)!important;
+  margin:18px auto 0!important;
+  box-sizing:border-box;
+  justify-content:center!important;
+  align-items:center;
+  overflow:hidden!important;
+  position:relative;
+  isolation:isolate;
+}
+.feedback-go:after{
+  inset:0!important;
+  border-radius:inherit!important;
+  transform:translateX(-125%)!important;
+  clip-path:inset(0 round 15px);
+}
+.feedback-go:hover:after{transform:translateX(125%)!important}
+.feedback-later{text-align:center}
+.feedback-fab{overflow:hidden!important}
+.feedback-fab:before{left:-42%!important;width:34%!important}
+.feedback-fab:hover:before{left:108%!important}
