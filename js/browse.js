@@ -50,7 +50,13 @@ BNM.browse = (function(){
           <section class="spotlight-finale"><div><small>THE FINALE</small><h3>Pick the cover.</h3><p>${s.finale}</p></div><div class="cover-stamp">BNM<br>WEEKLY<br><span>ISSUE 01</span></div></section>
           <footer class="spotlight-signoff"><p>${s.signoff}</p><button class="btn btn-primary" id="spotlightAccept">Accept CITY FRAME →</button></footer>`;
         section.querySelectorAll(".spotlight-explain").forEach(b=>b.onclick=()=>{const d=b.nextElementSibling;const opening=d.classList.contains("hidden");d.classList.toggle("hidden");b.textContent=opening?"Got it":"What counts?";});
-        document.getElementById("spotlightClose").onclick=()=>renderFeatured();
+        document.getElementById("spotlightClose").onclick=()=>{
+          const section=document.getElementById("adventureSpotlight");
+          section.className="spotlight";
+          section.removeAttribute("style");
+          renderFeatured();
+          section.scrollIntoView({behavior:"smooth",block:"center"});
+        };
         document.getElementById("spotlightAccept").onclick=()=>{BNM.track("spotlight_accept",{activity:a.id});BNM.adventure.start({id:"spotlight-city-frame",name:"CITY FRAME",emoji:"📸",minutes:45,cost:"free"})};
         section.scrollIntoView({behavior:"smooth",block:"start"});
       },280);

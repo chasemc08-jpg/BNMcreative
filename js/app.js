@@ -24,6 +24,8 @@ BNM.results=(function(){
   }
   function show(list,options={}){
     ranked=list;index=0;surpriseMode=Boolean(options.surprise);
+    const back=document.getElementById("resultsBack");
+    if(back) back.classList.toggle("hidden",!surpriseMode);
     document.querySelector(".results-head .eyebrow").textContent=surpriseMode?"No overthinking allowed":"Your best match";
     document.querySelector(".results-head h1").textContent=surpriseMode?BNM.copy.pick(["We picked this one for you.","No choices. Just go with it.","Okay — here's your move."]):BNM.copy.pick(BNM.copy.resultHeads);
     document.querySelector(".results-head p").textContent=surpriseMode?"Completely random. Sometimes that's exactly what you need.":"Only the important information is shown first. Open details when you're ready.";
@@ -65,6 +67,8 @@ document.addEventListener("DOMContentLoaded",()=>{
   document.getElementById("quickSetupBack").addEventListener("click",()=>BNM.show("browse"));
   document.getElementById("favoritesNav").addEventListener("click",BNM.favorites.open);
   document.getElementById("surpriseHero").addEventListener("click",BNM.adventure.surprise);
+  const resultsBack=document.getElementById("resultsBack");
+  if(resultsBack) resultsBack.addEventListener("click",()=>BNM.show("home"));
   document.getElementById("surpriseBrowse").addEventListener("click",BNM.adventure.surprise);
   document.getElementById("favoritesMatch").addEventListener("click",BNM.questionnaire.start);
   document.getElementById("cameBackButton").addEventListener("click",BNM.adventure.complete);

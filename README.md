@@ -1,3 +1,3 @@
-# BNMcreative v1.3.5 — Final Polish
+# BNMcreative v1.3.6 — Navigation + Gaming Browse
 
-Fixes the feedback shine, Surprise Me reroll, photo challenge repetition, gaming setup decisions, and simplifies the header.
+Fixes CITY FRAME return styling, Feedback shine clipping, adds Surprise Me back navigation, and adds Browse All challenges per game.

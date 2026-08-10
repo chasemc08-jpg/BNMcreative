@@ -141,3 +141,17 @@ select.search option{background:#171725}
 .feedback-fab:before{content:"";position:absolute;z-index:-1;top:-50%;bottom:-50%;width:45%;left:-60%;background:linear-gradient(110deg,transparent,#ffffff26,transparent);transform:skewX(-18deg);transition:left .62s ease}
 .feedback-fab:hover:before{left:125%}
 @media(max-width:580px){.header-clean{grid-template-columns:auto 1fr auto!important}.header-logo{justify-self:center}.header-version{font-size:.58rem;padding:4px 6px}.header-favorites .label{display:none}}
+
+/* v1.3.6 feedback shine containment */
+.feedback-fab{overflow:hidden!important;contain:paint}
+.feedback-fab:before{pointer-events:none;clip-path:inset(0 round 999px)}
+
+.results-topbar{display:flex;justify-content:flex-start;margin-bottom:18px}
+.gaming-toolbar{display:flex;justify-content:flex-end;margin:12px 0 20px}
+.gaming-all{margin-top:34px;padding-top:26px;border-top:1px solid var(--line)}
+.gaming-all-head{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:18px}
+.gaming-all-head h2{margin:0;font-size:clamp(1.8rem,4vw,2.6rem)}
+.gaming-all-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.compact-game-card{margin:0!important;max-width:none!important}
+.compact-game-card h2{font-size:clamp(1.5rem,3vw,2.2rem)!important}
+@media(max-width:800px){.gaming-all-grid{grid-template-columns:1fr}.gaming-toolbar{justify-content:stretch}.gaming-toolbar .btn{width:100%}}

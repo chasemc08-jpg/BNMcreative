@@ -106,3 +106,9 @@ Add any new idea here first. We can decide its version later.
 - Removed normal purple objective/bonus repetition from Photo Scavenger Hunt; Purple Van remains Spotlight-only.
 - Expanded "BNM decides" rule into Gaming: destinations, roles, game order, targets, and other setup choices are preselected whenever practical.
 - Product rule: never tell users to invent setup BNM can reasonably provide for them.
+
+## v1.3.6 — Navigation + Gaming Browse
+- CITY FRAME "Back to the issue" now fully resets Spotlight classes before rebuilding.
+- Feedback shine is clipped to the Feedback pill.
+- Surprise Me now has a Back button.
+- Gaming gets Browse All for the selected game, with full challenge cards and details.
