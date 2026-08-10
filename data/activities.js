@@ -2783,4 +2783,5 @@ window.BNM_ACTIVITIES = [
       "Take turns playing."
     ],
     "tip": "Mix funny tasks with conversation questions."
-  }];
+  }
+];
