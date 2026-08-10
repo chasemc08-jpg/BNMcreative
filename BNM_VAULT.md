@@ -90,3 +90,10 @@ Add any new idea here first. We can decide its version later.
 - Custom finale: group votes on the official cover shot
 - Spotlight gets its own intro, metadata, mission styling, rare challenge, signoff, and Accept Adventure flow
 - Direction going forward: every Spotlight should be a special edition of an activity, not the normal library version
+
+## v1.3.4 — Feedback + final polish
+- Added subtle Feedback button and BNM-styled anonymous feedback intro.
+- Connected the live Google Form and existing analytics events.
+- Challenge direction: do not overuse purple. Purple Van remains a rare CITY FRAME example.
+- Rotate future challenge ingredients: colors, objects, sounds, signs, patterns, weather, timed events, locations, perspective, rare finds, creative restrictions, and funny social moments.
+- Goal: users should not predict what BNM asks them to do next.
