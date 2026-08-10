@@ -36,3 +36,38 @@ Add any new idea here first. We can decide its version later.
 ## Branding
 - [x] Official BNM icon: purple-to-blue gradient rounded square with white sparkle.
 - [x] Use the icon for the browser favicon and website header.
+
+
+## ✅ Added in v1.3
+- Favorites (saved locally on the user's device)
+- Surprise Me
+- Adventure Complete + quick star rating
+- Microsoft Clarity analytics/event tracking
+
+## 💡 Still in the Vault
+- Adventure Mode with mission envelopes
+- Dynamic bonus missions
+- Hidden missions
+- Adventure postcards
+- Adventure Journal
+- Accounts / synced profiles
+- Achievements and streaks
+- Real community trending
+- Maps and nearby ideas
+- Weather-aware recommendations
+- AI recommendations
+
+
+## ✅ v1.3.1 — Games + Zero-Setup
+- Core rule: **You don't plan the fun. BNM does.**
+- Gaming Mode: Fortnite, Minecraft, Roblox, Rocket League, GTA V / Online
+- 30 launch game-specific challenges + "Decide for us"
+- Zero-Setup: Minute to Win It, Photo Hunt, Backyard Olympics, Trivia, Drawing Battle, Charades
+- Added Trivia, Drawing Battle, and Charades to the activity library
+
+## 💡 Saved for later
+- Creator Mode for streamers/content creators
+- Chat-voted challenges / challenge wheel
+- More supported games based on usage
+- Major layout/navigation redesign after this update
+- Public launch: replace Clarity with Simple Analytics
