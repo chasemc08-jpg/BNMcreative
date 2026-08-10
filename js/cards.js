@@ -1,6 +1,8 @@
 window.BNM = window.BNM || {};
 
 BNM.createActivityCard = function(activity, options={}){
+  const zeroSetupIds=["photo-scavenger-hunt", "backyard-olympics", "trivia-night", "minute-to-win-it-games", "charades-remix"];
+  const zeroSetup=zeroSetupIds.includes(activity.id);
   const showMatch = Boolean(options.showMatch);
   const compact = Boolean(options.compact);
   const why = activity.reasons && activity.reasons.length
