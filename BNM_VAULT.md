@@ -97,3 +97,12 @@ Add any new idea here first. We can decide its version later.
 - Challenge direction: do not overuse purple. Purple Van remains a rare CITY FRAME example.
 - Rotate future challenge ingredients: colors, objects, sounds, signs, patterns, weather, timed events, locations, perspective, rare finds, creative restrictions, and funny social moments.
 - Goal: users should not predict what BNM asks them to do next.
+
+## v1.3.5 — Final test polish
+- Header simplified: version far left, BNM brand centered, Favorites far right.
+- Removed redundant Browse and Find an Activity header buttons.
+- Fixed Feedback shine so it travels across the full pill.
+- Surprise Me now passes a randomized activity pool, so Show Me Another actually changes the activity.
+- Removed normal purple objective/bonus repetition from Photo Scavenger Hunt; Purple Van remains Spotlight-only.
+- Expanded "BNM decides" rule into Gaming: destinations, roles, game order, targets, and other setup choices are preselected whenever practical.
+- Product rule: never tell users to invent setup BNM can reasonably provide for them.

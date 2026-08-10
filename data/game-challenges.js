@@ -42,17 +42,17 @@ const BNM_GAME_CHALLENGES={
         "bonus": "Reach Top 10."
       },
       {
-        "title": "Random Drop",
-        "brief": "Nobody gets to argue about where you're landing.",
+        "title": "Edge-of-Map Drop",
+        "brief": "BNM picked the rule: land at the named POI closest to the far-left edge of your current map.",
         "rules": [
-          "Open the map before the bus route finishes.",
-          "Close your eyes and move the marker around.",
-          "Drop wherever the marker lands.",
-          "Everyone must commit to the spot."
+          "Open the map once the bus route appears.",
+          "Find the named POI closest to the far-left edge of the island.",
+          "Everyone marks that same POI and lands there.",
+          "Stay in that POI until the first storm circle appears."
         ],
-        "why": "The random landing can put you somewhere you would never normally choose.",
-        "tip": "If the marker lands somewhere awful, that is kind of the point.",
-        "bonus": "Stay in the landing area until the first storm begins moving."
+        "why": "The rule selects the landing spot for you while still working as Fortnite's map changes.",
+        "tip": "Loot quickly because the storm may force a long rotation.",
+        "bonus": "Leave the POI with your full squad alive."
       },
       {
         "title": "Gray to Great",
@@ -113,15 +113,16 @@ const BNM_GAME_CHALLENGES={
       },
       {
         "title": "Biome Bingo",
-        "brief": "Exploration becomes a collection race.",
+        "brief": "BNM picked four targets: plains, forest, desert, and any snowy biome. Find as many as your world allows.",
         "rules": [
-          "Find four different biomes.",
-          "Take one recognizable block/item from each.",
-          "Return to the starting area with all four."
+          "Start from your current base or spawn.",
+          "Look specifically for plains, forest, desert, and any snowy biome.",
+          "Collect one recognizable block/item from each biome you actually find.",
+          "Return with your collection after 45 minutes."
         ],
-        "why": "Instead of wandering with no goal, every new landscape becomes progress.",
-        "tip": "Bring food and mark coordinates before leaving.",
-        "bonus": "Find any generated structure during the trip."
+        "why": "The targets are already chosen, so exploration starts immediately instead of becoming another planning session.",
+        "tip": "Write down your starting coordinates before leaving.",
+        "bonus": "Find any generated structure along the way."
       },
       {
         "title": "Abandoned Theme Park",
@@ -183,29 +184,29 @@ const BNM_GAME_CHALLENGES={
       },
       {
         "title": "Genre Hop",
-        "brief": "Three completely different Roblox experiences in one session.",
+        "brief": "BNM picked the order: horror → obby → social/hangout.",
         "rules": [
-          "Play one horror game.",
-          "Play one competitive game.",
-          "Play one weird/social game.",
-          "Spend roughly 15 minutes in each before switching."
+          "Start with a horror game for 15 minutes.",
+          "Then play an obby for 15 minutes.",
+          "Finish with a social/hangout game for 15 minutes.",
+          "Use the first reasonable game you see in each category—no 20-minute debate."
         ],
-        "why": "It keeps the night moving and usually exposes the group to something they wouldn't have picked.",
-        "tip": "Vote after each game, but don't reveal the final winner until the end.",
-        "bonus": "Everyone votes on the surprise favorite."
+        "why": "The order is already decided, so your group only has to hit Play.",
+        "tip": "Don't judge the whole category by the first five minutes.",
+        "bonus": "Everyone votes on the surprise favorite at the end."
       },
       {
         "title": "Obby Race Night",
-        "brief": "Turn any obby into a little tournament.",
+        "brief": "Open Discover, search 'obby', and use the first non-sponsored result everyone can join.",
         "rules": [
-          "Everyone starts at the same time.",
-          "No paid skips.",
-          "First finisher gets 3 points, second gets 2, third gets 1.",
-          "Run multiple obbies if you want a full tournament."
+          "Search Roblox for 'obby'.",
+          "Use the first non-sponsored result that supports your group.",
+          "Everyone starts together; no paid skips.",
+          "First finisher gets 3 points, second gets 2, third gets 1."
         ],
-        "why": "A normal obby becomes competitive without needing a custom server or complicated setup.",
-        "tip": "Choose an obby nobody in the group has mastered already.",
-        "bonus": "Winner chooses the next obby."
+        "why": "BNM removes the choice of which obby to use, so you can start instead of browsing forever.",
+        "tip": "If the first result is broken or inaccessible, move exactly one result down.",
+        "bonus": "Winner gets to assign one harmless handicap for a rematch."
       },
       {
         "title": "Horror Rule",
@@ -254,16 +255,16 @@ const BNM_GAME_CHALLENGES={
     "challenges": [
       {
         "title": "Goalkeeper Roulette",
-        "brief": "One player becomes a dedicated goalie until the next goal.",
+        "brief": "Player 1 starts in goal. After every goal, rotate to the next player in party order.",
         "rules": [
-          "Choose the starting goalkeeper.",
+          "The first player in your party list is the starting goalkeeper.",
           "Goalkeeper cannot cross midfield.",
-          "After any goal, rotate the goalkeeper.",
-          "Everybody must take a turn."
+          "After any goal, rotate goalkeeper to the next player in party order.",
+          "Continue the rotation for the whole match."
         ],
-        "why": "It forces actual roles and weird rotations instead of everybody chasing the ball.",
-        "tip": "The goalie can still pass and clear—just don't cross midfield.",
-        "bonus": "Goalkeeper records an assist."
+        "why": "The rotation is predetermined, so nobody has to decide roles.",
+        "tip": "The goalie can still clear and pass—just stay behind midfield.",
+        "bonus": "A goalkeeper gets an assist without crossing midfield."
       },
       {
         "title": "Aerials Count Double",
@@ -349,16 +350,16 @@ const BNM_GAME_CHALLENGES={
       },
       {
         "title": "Point A to Chaos",
-        "brief": "Cross Los Santos without using the convenient stuff you normally rely on.",
+        "brief": "Get from Los Santos International Airport to the Alamo Sea using the first ordinary car you can steal/find within the game's rules.",
         "rules": [
-          "Choose a destination far away.",
-          "No personal supercars or aircraft.",
-          "Use a random/ordinary vehicle or transportation you find.",
-          "Everyone starts at the same point."
+          "Start outside LSIA.",
+          "Take the first ordinary street vehicle you find—no rerolling for something faster.",
+          "Drive to the Alamo Sea.",
+          "No aircraft, personal supercars, or calling in a replacement vehicle."
         ],
-        "why": "Getting there becomes the activity instead of just fast-traveling mentally from mission to mission.",
-        "tip": "Use a route with hills or rural areas if you want things to go wrong faster.",
-        "bonus": "Arrive with your original vehicle intact."
+        "why": "BNM picks the route and the restriction, so the trip itself becomes the activity.",
+        "tip": "Protect the original vehicle. Losing it makes the run a lot harder.",
+        "bonus": "Reach the Alamo Sea with the original vehicle still drivable."
       },
       {
         "title": "Wanted Level Relay",
@@ -401,16 +402,16 @@ const BNM_GAME_CHALLENGES={
       },
       {
         "title": "No GPS Run",
-        "brief": "You think you know Los Santos. Prove it.",
+        "brief": "Get from Vespucci Beach to the Vinewood Sign without using the map.",
         "rules": [
-          "Choose a recognizable destination.",
-          "Ignore the GPS route.",
-          "Navigate using landmarks, signs, and memory.",
-          "Avoid opening the full map if possible."
+          "Start at Vespucci Beach near the pier.",
+          "Your destination is the Vinewood Sign.",
+          "Do not open the full map or follow a GPS route.",
+          "Navigate using roads, signs, landmarks, and memory."
         ],
-        "why": "The familiar map suddenly becomes something you have to actually read.",
-        "tip": "Start with medium-distance landmarks before attempting cross-map runs.",
-        "bonus": "Reach the destination without opening the full map once."
+        "why": "BNM chooses both ends of the trip, so there is nothing to set up—you just have to prove you know Los Santos.",
+        "tip": "Look for downtown first, then use the hills and the sign itself to orient yourself.",
+        "bonus": "Reach the sign without opening the full map once."
       }
     ]
   }

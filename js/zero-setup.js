@@ -10,12 +10,12 @@ const packs={
 "photo-scavenger-hunt":{name:"Photo Scavenger Hunt",emoji:"📸",items:[
 ["Main Character Shot","Take a photo that looks like a movie poster.","Use framing, lighting, or a dramatic pose—don't just take a normal group picture."],
 ["Tiny World","Photograph something small so it looks enormous.","Get your camera very low/close and use perspective."],
-["Something Completely Purple","Find the strongest purple thing you can.","A purple vehicle is an automatic bonus."],
+["One-Color Takeover","Find a scene where one unexpected color completely dominates the frame.","Pick whatever color the environment gives you—don't choose it ahead of time."],
 ["Album Cover","Create a photo your group could genuinely use as an album cover.","No explanation allowed when you show it later."],
 ["Wrong Place","Find something that looks like it absolutely does not belong where it is.","The stranger the context, the better."],
 ["Human Optical Illusion","Use perspective to make someone look tiny, giant, or like they're holding a building.","Line up the shot carefully."],
 ["Accidental Art","Find a shadow, reflection, stain, crack, or random object arrangement that looks like art.","No moving objects to create it."]
-],bonus:"🔥 Rare bonus: spot a purple vehicle before the hunt ends."},
+],bonus:"🔥 Rare bonus: capture a perfectly timed coincidence—two strangers matching, a weird reflection, an accidental visual illusion, or something equally unlikely."},
 "backyard-olympics":{name:"Backyard Olympics",emoji:"🏅",items:[
 ["Reverse Target Toss","Stand facing away from a bucket/target and toss over your shoulder.","Three attempts each."],
 ["Slowest Race","Race to the finish line—but the LAST person to cross wins. You must keep moving forward.","Stopping or moving backward = disqualification."],

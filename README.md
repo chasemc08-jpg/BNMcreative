@@ -1,3 +1,3 @@
-# BNMcreative v1.3.4 — Feedback + Polish
+# BNMcreative v1.3.5 — Final Polish
 
-Bundled stopping-point build: Gaming, Zero-Setup, challenge explanations, CITY FRAME Spotlight, Spotlight watermark fix, and anonymous feedback entry point.
+Fixes the feedback shine, Surprise Me reroll, photo challenge repetition, gaming setup decisions, and simplifies the header.

@@ -70,10 +70,10 @@ BNM.adventure = (function(){
   }
 
   function surprise(){
-    const activity=BNM_ACTIVITIES[Math.floor(Math.random()*BNM_ACTIVITIES.length)];
-    const fakeMatch={...activity,match:Math.floor(Math.random()*8)+90,reasons:["was chosen completely at random"]};
-    BNM.track("surprise_me",{activity:activity.id});
-    BNM.results.show([fakeMatch],{surprise:true});
+    const shuffled=[...BNM_ACTIVITIES].sort(()=>Math.random()-.5);
+    const pool=shuffled.map(activity=>({...activity,match:Math.floor(Math.random()*8)+90,reasons:["was chosen completely at random"]}));
+    BNM.track("surprise_me",{activity:pool[0].id});
+    BNM.results.show(pool,{surprise:true});
   }
 
   return {start,complete,rate,surprise};

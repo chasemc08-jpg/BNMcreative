@@ -55,10 +55,10 @@ BNM.favorites=(function(){
 
 document.addEventListener("DOMContentLoaded",()=>{
   document.getElementById("startHero").addEventListener("click",BNM.questionnaire.start);
-  document.getElementById("startNav").addEventListener("click",BNM.questionnaire.start);
+  
   document.getElementById("browseStart").addEventListener("click",BNM.questionnaire.start);
   document.getElementById("browseHero").addEventListener("click",BNM.browse.open);
-  document.getElementById("browseNav").addEventListener("click",BNM.browse.open);
+  
   document.getElementById("gamingHero").addEventListener("click",BNM.gaming.open);
   document.getElementById("gamingRandom").addEventListener("click",BNM.gaming.random);
   document.getElementById("gamingBack").addEventListener("click",()=>BNM.show("home"));
